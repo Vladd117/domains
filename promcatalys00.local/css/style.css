@@ -1,0 +1,407 @@
+@font-face {
+    font-family: 'SanFrancisco';
+    src: url("../fonts/SFUIDisplay-Regular.woff") format('woff');
+}
+
+@font-face {
+    font-family: 'SanFrancisco';
+    src: url("../fonts/SFUIDisplay-Heavy.woff") format('woff');
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: 'SanFrancisco';
+    src: url("../fonts/SFUIDisplay-Bold.woff") format('woff');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'SanFrancisco';
+    src: url("../fonts/SFUIDisplay-Medium.woff") format('woff');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'SanFrancisco';
+    src: url("../fonts/SFUIDisplay-Light.woff") format('woff');
+    font-weight: 200;
+}
+
+html {
+    font-size: 20px;
+}
+
+body {
+    font-family: 'SanFrancisco';
+}
+
+*,
+*::before,
+ ::after {
+    box-sizing: border-box;
+}
+
+* button:focus {
+    outline: 0;
+}
+
+
+/*Header*/
+
+.header-container {
+    font-size: 20px;
+    max-width: 100%;
+    background-image: url(../img/header.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: #003060;
+    min-height: 300px;
+    position: relative;
+}
+
+.header-logo {
+    position: absolute;
+    left: 20%;
+    top: 50%;
+    display: flex;
+    margin-top: -8em;
+}
+
+.header-logo .logo {
+    flex-basis: 0;
+    flex-grow: 1;
+    padding-top: 2.5em;
+}
+
+.logo-img {
+    width: auto;
+}
+
+.header-text {
+    font-family: "SanFrancisco";
+    flex-basis: 0;
+    flex-grow: 1;
+    color: white;
+    padding-left: 2em;
+    padding-top: 4em;
+}
+
+.header-text .zao {
+    margin: 0;
+    font-weight: 500;
+    font-size: 1em;
+    text-shadow: -1px 1px 0.2em #001b57, 0px 0px 0.1em #001b57;
+}
+
+.header-text .pk {
+    padding: 0;
+    margin: 0;
+    font-weight: 900;
+    font-size: 2.1em;
+    text-shadow: -1px 1px 0.3em #001b57, 0px 0px 0.2em #001b57;
+}
+
+.header-cont {
+    position: absolute;
+    left: 25%;
+    bottom: 1em;
+    color: rgb(255, 255, 255);
+    font-size: .8em;
+    text-shadow: -1px 1px 0.2em #001b57;
+}
+
+.header-cont-span {
+    display: inline-block;
+    white-space: nowrap;
+}
+
+
+/*Top side bar*/
+
+.topbar-container {
+    width: 100%;
+    padding: 0;
+    background-color: rgb(255, 100, 0);
+}
+
+.topbar {
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    max-width: 1000px;
+    background-color: rgb(255, 100, 0);
+}
+
+.tbtn {
+    flex-basis: initial;
+    font-family: "SanFrancisco";
+    font-weight: 500;
+    border: 0;
+    font-size: 0.9rem;
+    width: 100%;
+    padding: 0.5rem 1rem;
+    background-color: rgb(255, 100, 0);
+    color: white;
+    white-space: nowrap;
+    transition: background-color 0.4s;
+}
+
+.tbtn:hover {
+    background-color: rgb(255, 169, 41);
+}
+
+
+/*Main*/
+
+.bg {
+    height: auto;
+    background-image: url(../img/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 100% auto;
+    background-color: #ffffff;
+    min-height: 300px;
+}
+
+.main {
+    display: flex;
+    max-width: 1000px;
+    display: flex;
+    margin: auto;
+}
+
+
+/*leftside bar*/
+
+.leftside {
+    flex-grow: 1;
+    flex-basis: 11rem;
+    text-align: center;
+    font-weight: bold;
+    min-height: 10em;
+    padding: .5em .5em;
+    width: 11em;
+    background-color: rgb(0, 174, 255, 0.2);
+}
+
+.leftside-title {
+    display: block;
+    font-size: 1.2em;
+    color: rgb(0, 36, 77);
+    padding: .5em .5em;
+}
+
+
+/*Content*/
+
+.content {
+    font-family: "SanFrancisco";
+    flex-grow: 1;
+    flex-basis: auto;
+    max-width: 100%;
+    font-size: .8em;
+    min-height: 20em;
+    text-align: justify;
+    padding: 2em;
+    background-color: rgb(255, 255, 255, .6);
+}
+
+.content img {
+    padding: 1em;
+    transform: scale(1);
+    transition: transform 0.5s;
+}
+
+.content img:hover {
+    transform: scale(1.1);
+}
+
+.img {
+    text-align: center;
+}
+
+.link {
+    display: block;
+    padding-top: 1em;
+    font-size: 1.2em;
+    font-style: normal;
+    color: rgb(0, 94, 172);
+    transition: color 0.5s;
+}
+
+.link:hover {
+    color: rgb(226, 121, 0);
+}
+
+.content h1,
+h2,
+h3,
+h4 {
+    text-align: left;
+}
+
+h1 {
+    font-size: 1.5em;
+}
+
+.content h1 {
+    width: fit-content;
+    font-size: 1.5em;
+    font-weight: 500;
+    display: block;
+    border-bottom: 2px solid rgb(20, 20, 20, .4);
+    color: rgb(61, 61, 61);
+}
+
+.content strong {
+    font-family: "SanFrancisco";
+    font-size: 1em;
+    text-align: justify;
+    font-weight: 500;
+}
+
+.image-in-text {
+    display: block;
+    margin: auto;
+    max-width: 100%;
+}
+
+.footer-container {
+    font-size: 20px;
+    max-width: 100%;
+    background-image: url(../img/footer.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: #003060;
+    min-height: 300px;
+    position: relative;
+}
+
+.footer-cont {
+    font-size: 0.8em;
+    margin: 0;
+    padding: .5em 0em;
+    color: white;
+    text-align: center;
+    text-shadow: -1px 1px 0.2em #001b57, 0px 0px 0.1em #001b57;
+}
+
+.footer-partners {
+    text-align: center;
+    font-size: 1em;
+    margin: 0;
+    padding: .5em 0em;
+    color: white;
+    text-align: center;
+    text-shadow: -1px 1px 0.2em #001b57, 0px 0px 0.1em #001b57;
+}
+
+.footer-partners-imgs {
+    max-width: 1000px;
+    margin: auto;
+    background-color: rgb(255, 255, 255, .7);
+    border-radius: 1em;
+    margin-top: .2em;
+}
+
+.footer-partners-imgs img {
+    height: 70px;
+    padding: 10px 10px;
+}
+
+
+/* Media*/
+
+@media(max-width: 1200px) {
+    .header-container {
+        max-width: 100%;
+        min-height: 200px;
+        background-size: auto 200px;
+    }
+    .header-logo {
+        left: 10%;
+        top: 20%;
+        margin-top: -3em;
+    }
+    .header-logo .logo {
+        padding-top: 2.5em;
+    }
+    .logo-img {
+        width: 150px;
+    }
+    .header-text {
+        padding-left: 1em;
+        padding-top: 4em;
+    }
+    .header-text .zao {
+        font-size: .7em;
+    }
+    .header-text .pk {
+        font-size: 1.5em;
+    }
+}
+
+@media(max-width: 800px) {
+    .header-container {
+        max-width: 100%;
+        min-height: 200px;
+        background-size: auto 200px;
+    }
+    .header-logo {
+        left: 10%;
+        top: 20%;
+        margin-top: -1em;
+    }
+    .header-logo .logo {
+        padding-top: 1em;
+    }
+    .logo-img {
+        width: 90px;
+    }
+    .header-text {
+        padding-left: 1em;
+        padding-top: 2em;
+    }
+    .header-text .zao {
+        font-size: .4em;
+    }
+    .header-text .pk {
+        font-size: 1em;
+    }
+    .main {
+        flex-wrap: wrap;
+    }
+    .leftside {
+        flex-basis: 100%;
+    }
+    .content {
+        flex-basis: 100%;
+    }
+    .topbar {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: auto;
+        max-width: 100%;
+    }
+    .tbtn {
+        display: inline-block;
+        flex-basis: 0;
+    }
+    .leftside {
+        flex-wrap: wrap;
+        justify-content: left;
+        margin: auto;
+        max-width: 100%;
+    }
+    .header-cont {
+        left: 10%;
+        bottom: 1em;
+        font-size: .8em;
+    }
+    .footer-partners-imgs img {
+        height: 50px;
+        padding: 5px 10px;
+    }
+}
