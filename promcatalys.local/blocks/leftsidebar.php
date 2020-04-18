@@ -9,11 +9,31 @@
             <div class="lbtn-button-text">Продукция</div>
 
         </button>
-        <a href='./prodlist.php?category=rif&title=Катализаторы риформинга#anchor'><div class="lbtn-sub-button"><button>Катализаторы риформинга</button></div></a>
-        <div class="lbtn-sub-button"><button>Катализаторы изомеризации</button></div>
-        <div class="lbtn-sub-button"><button>Катализаторы процесса Клауса</button></div>
-        <div class="lbtn-sub-button"><button>Экологические катализаторы</button></div>
-        <div class="lbtn-sub-button"><button>Носители для катализаторов</button></div>
+        <a href="./prodlist.php?category=rif&title=Катализаторы риформинга#anchor">
+            <div class="lbtn-sub-button"><button>Катализаторы риформинга</button></div>
+        </a>
+        <a href="./prodlist.php?category=izom&title=Катализаторы изомеризации#anchor">
+            <div class="lbtn-sub-button"><button>Катализаторы изомеризации</button></div>
+        </a>
+        <a href="./prodlist.php?category=go&title=Катализаторы гидроочистки#anchor">
+            <div class="lbtn-sub-button"><button>Катализаторы гидроочистки</button></div>
+        </a>
+        <a href="./prodlist.php?category=gig&title=Катализаторы гидрирования и гидрокрекинга#anchor">
+            <div class="lbtn-sub-button"><button>Катализаторы гидрирования и гидрокрекинга</button></div>
+        </a>
+        <a href="./prodlist.php?category=klaus&title=Катализаторы процесса Клауса#anchor">
+            <div class="lbtn-sub-button"><button>Катализаторы процесса Клауса</button></div>
+        </a>
+        <a href="./prodlist.php?category=eco&title=Экологические катализаторы#anchor">
+            <div class="lbtn-sub-button"><button>Экологические катализаторы</button></div>
+        </a>
+        <a href="./prodlist.php?category=nos&title=Носители для катализаторов#anchor">
+            <div class="lbtn-sub-button"><button>Носители для катализаторов</button></div>
+        </a>
+        <a href="./prodlist.php?category=adsorb&title=Адсорбенты и осушители#anchor">
+            <div class="lbtn-sub-button"><button>Адсорбенты и осушители</button></div>
+        </a>
+        
     </div>
 
     <!-- Animated button -->
@@ -87,5 +107,5 @@
         <div class="lbtn-sub-button"><button>Клауса</button></div>
         <div class="lbtn-sub-button"><button>Экологические</button></div>
         <div class="lbtn-sub-button"><button>Носители</button></div> -->
-<!-- <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>&nbsp; -->
+    <!-- <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>&nbsp; -->
 </div>

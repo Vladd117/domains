@@ -1,4 +1,4 @@
-<header class="header-container">
+<div class="header-container">
         <div class="header-logo">
             <div class="logo">
                 <img class="logo-img" src="./img/logo.png" alt="">
@@ -12,4 +12,4 @@
             <span class="header-cont-span">info@promcatalys.ru &nbsp;&nbsp;&nbsp;&nbsp;</span> <span class="header-cont-span">Тел.: +7 (4912) 46-64-20</span>
         </div>
         <br><br><br><br>
-    </header>
+    </div>

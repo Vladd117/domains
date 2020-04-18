@@ -20,7 +20,7 @@
     <?php
     require_once './blocks/topmenu.php';
     ?>
-    <main class="bg">
+    <div class="bg">
 
         <div class="main">
             <?php
@@ -48,7 +48,7 @@
             </div>
 
         </div>
-    </main>
+    </div>
     <?php
     require_once './blocks/footer.php';
     ?>

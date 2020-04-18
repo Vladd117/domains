@@ -163,6 +163,7 @@ body {
 }
 
 .main {
+    display: flex;
     max-width: 1000px;
     display: flex;
     margin: auto;
@@ -172,11 +173,11 @@ body {
 /*leftside bar*/
 
 .leftside {
-    min-width: 11em;
+    flex-basis: 11rem;
     text-align: center;
     font-weight: bold;
     min-height: 10em;
-    padding: .5em 0;
+    padding: .5em .5em;
     width: 11em;
     background-color: rgba(0, 174, 255, 0.2);
 }
@@ -193,7 +194,8 @@ body {
 
 .content {
     font-family: "SanFrancisco";
-    width: auto;
+    flex-grow: 1;
+    flex-basis: auto;
     max-width: 100%;
     font-size: .8em;
     min-height: 800px;

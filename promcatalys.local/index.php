@@ -6,7 +6,7 @@
     require_once('./db/connectdb.php');
     $sql = 'SELECT * FROM `articles` WHERE `location` = ?';
     $location = 'main';
-    
+
     $query = $pdo->prepare($sql);
     $query->execute(array($location));
 
@@ -23,7 +23,7 @@
 
     require_once './blocks/topmenu.php';
     ?>
-    <main class="bg">
+    <div class="bg">
 
         <div class="main">
             <?php
@@ -38,7 +38,7 @@
             </div>
 
         </div>
-    </main>
+    </div>
     <?php
     require_once './blocks/footer.php';
     ?>

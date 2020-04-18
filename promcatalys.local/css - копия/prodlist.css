@@ -1,17 +1,19 @@
 .prodlist {
+    display: inline-flex;
+    flex-wrap: wrap;
     justify-content: center;
     text-align: center;
+    vertical-align: top;
 }
 
 .product {
     display: inline-block;
     box-sizing: content-box;
-    vertical-align: top;
     background-color: rgba(0, 174, 255, .1);
     border: rgb(21, 110, 184) solid 1px;
     border-radius: 10px;
     max-width: 220px;
-    min-height: 18em;
+    /* min-height: 10em; */
     margin: 10px 7px 10px 7px;
     padding: 10px;
     text-align: center;
@@ -45,8 +47,7 @@
     text-align: center;
     width: 200px;
     min-height: 5em;
-    margin-bottom: .2em;
-    vertical-align: top;
+    margin-bottom: 1em;
     font-size: 1.1em;
     text-align: center;
     color: rgb(21, 110, 184);
