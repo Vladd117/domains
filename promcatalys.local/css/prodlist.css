@@ -53,7 +53,7 @@
     vertical-align: top;
     font-size: 1.1em;
     text-align: center;
-    color: rgb(21, 110, 184);
+    color: rgb(3, 61, 109);
 }
 
 .prodlist .prod-text {
@@ -80,7 +80,7 @@
     width: 140px;
     height: 140px;
     border-radius: 100%;
-    transition: 0.5s;
+    transition: 1s;
 }
 
 .show-product .prod-title {
@@ -91,7 +91,7 @@
     font-size: 1.7em;
     text-align: left;
     color: rgb(3, 61, 109);
-    transition: 0.5s;
+    transition: 1s;
 }
 
 

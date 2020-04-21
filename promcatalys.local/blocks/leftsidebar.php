@@ -59,7 +59,7 @@
     </div>
 
     <!-- Animated button -->
-    <div class="lbtn-container">
+    <!-- <div class="lbtn-container">
         <button class="lbtn-learn-more">
             <div class="lbtn-circle">
                 <div class="lbtn-button-icon lbtn-rotate-450">></div>
@@ -79,7 +79,7 @@
 
         ?>
 
-    </div>
+    </div> -->
     <!-- Animated button -->
     <div class="lbtn-container">
         <button class="lbtn-learn-more">
