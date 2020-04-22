@@ -99,12 +99,10 @@
     display: none;
 } */
 
-.product {
-    overflow: hidden;
-}
+.product {}
 
 .hide-text {
-    display: hidden;
+    display: none;
     text-align: justify;
     max-height: 0px;
     /* transition: 1s; */
@@ -112,7 +110,6 @@
 
 .show-text {
     display: block;
-    overflow: hidden;
     /* display: block; */
     text-align: justify;
     max-height: max-content;
