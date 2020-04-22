@@ -104,13 +104,14 @@
 }
 
 .hide-text {
-    overflow: hidden;
+    display: hidden;
     text-align: justify;
     max-height: 0px;
     /* transition: 1s; */
 }
 
 .show-text {
+    display: block;
     overflow: hidden;
     /* display: block; */
     text-align: justify;
