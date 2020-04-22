@@ -35,29 +35,30 @@ window.addEventListener('DOMContentLoaded',
             //}, 100);
             console.log(product[b].classList);
             console.log('ok');
-            setTimeout(() => {
-                scroll(product[b].offsetTop);
-            }, 600);
+            // setTimeout(() => {
+            scroll(product[b].offsetTop);
+            // }, 600);
             // prodlist.classList.remove('hide');
             // prodlist.classList.add('show');
             // }
         }
 
         function scroll(b) {
-            if (document.documentElement.scrollTop < b) {
-                let scrl = setInterval(() => {
-                    let scs = (b - document.documentElement.scrollTop) / 50 + 1;
-                    document.documentElement.scrollTop += scs;
-                    if (document.documentElement.scrollTop >= b) { clearInterval(scrl); }
-                }, 5);
-            }
-            if (document.documentElement.scrollTop > b) {
-                let scrl = setInterval(() => {
-                    let scs = (document.documentElement.scrollTop - b) / 50 + 1;
-                    document.documentElement.scrollTop -= scs;
-                    if (document.documentElement.scrollTop <= b) { clearInterval(scrl); }
-                }, 5);
-            }
+            document.documentElement.scrollTop = b;
+            // if (document.documentElement.scrollTop < b) {
+            //     let scrl = setInterval(() => {
+            //         let scs = (b - document.documentElement.scrollTop) / 50 + 1;
+            //         document.documentElement.scrollTop += scs;
+            //         if (document.documentElement.scrollTop >= b) { clearInterval(scrl); }
+            //     }, 5);
+            // }
+            // if (document.documentElement.scrollTop > b) {
+            //     let scrl = setInterval(() => {
+            //         let scs = (document.documentElement.scrollTop - b) / 50 + 1;
+            //         document.documentElement.scrollTop -= scs;
+            //         if (document.documentElement.scrollTop <= b) { clearInterval(scrl); }
+            //     }, 5);
+            // }
         }
 
         prodlist.addEventListener('click', function(event) {
