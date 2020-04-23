@@ -50,10 +50,11 @@
 
         </div>
     </div>
+    <script src="./js/script.js"></script>
     <?php
     require_once './blocks/footer.php';
     ?>
-    <script src="./js/script.js"></script>
+    
 </body>
 
 </html>

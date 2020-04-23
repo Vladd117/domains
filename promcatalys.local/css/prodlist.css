@@ -68,6 +68,8 @@
 .show-product {
     text-align: justify;
     max-width: 800px;
+    background-color: rgba(0, 174, 255, 0);
+    border: rgb(21, 110, 184) solid 0px;
     /* transition: 0.5s; */
 }
 

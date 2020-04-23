@@ -125,20 +125,20 @@ body {
 
 .topbar {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     margin: auto;
     max-width: 1000px;
     background-color: rgb(255, 100, 0);
 }
 
 .tbtn {
-    flex-basis: initial;
+    display: inline-block;
     font-family: "SanFrancisco";
     font-weight: 500;
     border: 0;
     font-size: 0.9rem;
-    width: 100%;
-    padding: 0.5rem 1rem;
+    width: auto;
+    padding: 0.5rem 1.7em;
     background-color: rgb(255, 100, 0);
     color: white;
     white-space: nowrap;
@@ -263,6 +263,8 @@ h1 {
 }
 
 .footer-container {
+    font-family: "SanFrancisco";
+    font-weight: normal;
     font-size: 20px;
     max-width: 100%;
     background-image: url(../img/footer.jpg);
@@ -275,6 +277,8 @@ h1 {
 }
 
 .footer-cont {
+    font-family: "SanFrancisco";
+    font-weight: normal;
     font-size: 0.8em;
     margin: 0;
     padding: .5em 0em;
@@ -284,6 +288,8 @@ h1 {
 }
 
 .footer-partners {
+    font-family: "SanFrancisco";
+    font-weight: normal;
     text-align: center;
     font-size: 1em;
     margin: 0;
@@ -304,6 +310,21 @@ h1 {
 .footer-partners-imgs img {
     height: 70px;
     padding: 10px 10px;
+}
+
+.autograph {
+    font-family: "SanFrancisco";
+    font-weight: normal;
+    font-size: 0.7em;
+    margin-left: 2em;
+    padding: .5em 0em;
+    color: white;
+    text-align: left;
+    text-shadow: -1px 1px 0.2em #001b57, 0px 0px 0.1em #001b57;
+}
+
+.autograph a {
+    color: white;
 }
 
 
