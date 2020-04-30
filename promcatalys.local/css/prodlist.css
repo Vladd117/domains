@@ -4,6 +4,7 @@
 }
 
 .product {
+    cursor: default;
     display: inline-block;
     box-sizing: content-box;
     vertical-align: top;
@@ -41,10 +42,12 @@
 }
 
 .product:hover .list-img {
+    cursor: default;
     border-color: rgb(255, 100, 0);
 }
 
 .prod-title {
+    cursor: default;
     text-align: center;
     width: 200px;
     min-height: 5em;

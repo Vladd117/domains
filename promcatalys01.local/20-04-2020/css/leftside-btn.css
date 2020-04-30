@@ -1,0 +1,163 @@
+/*Left buttons*/
+
+.lbtn-container * {
+    font-size: 20px;
+}
+
+.lbtn-container {
+    position: relative;
+    max-height: 2.6em;
+    width: 11em;
+    left: 0;
+    margin: 1em 0em;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+}
+
+.lbtn-container:hover {
+    max-height: 25em;
+    transition: all 0.5s ease-in;
+}
+
+.lbtn-learn-more {
+    background-color: rgba(192, 192, 192, 0);
+    border: 0;
+    width: 10em;
+    height: 2.6em;
+    margin-bottom: 0;
+}
+
+.lbtn-learn-more:focus {
+    outline: none;
+}
+
+.lbtn-circle {
+    position: relative;
+    width: 2.5em;
+    height: 2.5em;
+    background: rgb(255, 100, 0);
+    border-radius: 1.25em;
+    border: 0;
+    transition: width 0.5s, color 0.5s;
+}
+
+.lbtn-button-icon {
+    position: absolute;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    text-align: center;
+    top: 0.75em;
+    left: 1em;
+    color: white;
+    font-size: 1em;
+    transition: left 0.5s, -webkit-transform 0.5s, text-shadow 0.5s;
+}
+
+.lbtn-button-icon::before {
+    content: "";
+}
+
+.lbtn-container:hover .lbtn-button-icon::before {
+    content: ">";
+}
+
+.lbtn-container:hover .lbtn-button-icon {
+    left: 0.7em;
+    transform: rotate();
+    text-shadow: 0em 0em 0.5em white;
+}
+
+.lbtn-container:hover .lbtn-button-icon.lbtn-rotate-450 {
+    transform: rotate(450deg);
+}
+
+.lbtn-container:hover .lbtn-button-icon.lbtn-rotate-360 {
+    transform: rotate(360deg);
+    left: 1em;
+}
+
+.lbtn-container:hover .lbtn-circle {
+    width: 9.5em;
+}
+
+.lbtn-button-text {
+    position: absolute;
+    font-family: "SanFrancisco";
+    font-weight: 500;
+    top: 0.9em;
+    padding: .2em 3.5em;
+    font-size: 0.8em;
+    color: rgb(0, 36, 77);
+    transition: color 0.5s;
+}
+
+.lbtn-button-text2 {
+    position: absolute;
+    font-family: "SanFrancisco";
+    font-weight: 500;
+    top: 0.8em;
+    text-align: left;
+    padding-left: 3.5em;
+    margin-top: -.3em;
+    font-size: 0.8em;
+    color: rgb(0, 36, 77);
+    transition: color 0.5s;
+}
+
+.lbtn-container:hover .lbtn-button-text {
+    color: white;
+}
+
+.lbtn-container:hover .lbtn-button-text2 {
+    color: white;
+}
+
+.lbtn-sub-button {
+    margin: .2em 0 0 2.5em;
+    width: 7em;
+    text-align: left;
+    transition: background-color 0.3s;
+}
+
+.lbtn-sub-button button {
+    font-size: 0.7em;
+    font-family: "SanFrancisco";
+    font-weight: 500;
+    text-align: left;
+    background: space;
+    border: 0;
+    border-bottom: 1px solid rgba(0, 36, 77, 0.3);
+    margin: 0.25em 0 0.25em 0
+}
+
+.lbtn-sub-button:hover {
+    background-color: rgba(57, 179, 255, .5);
+}
+
+@media(max-width: 800px) {
+    .lbtn-container * {
+        font-size: 25px;
+    }
+    .lbtn-container {
+        display: inline-block;
+        min-height: 4em;
+        min-width: 14.7em;
+        margin: 1em 0em;
+        overflow: hidden;
+    }
+    .lbtn-button-text {
+        top: 1em;
+        padding: .2em 3.7em;
+        font-size: 0.8em;
+        color: rgb(0, 36, 77);
+        transition: color 0.5s;
+    }
+    .lbtn-button-text2 {
+        top: 1em;
+        margin-top: -.8em;
+        padding: .2em 3.7em;
+        font-size: 0.8em;
+        color: rgb(0, 36, 77);
+        transition: color 0.5s;
+    }
+}

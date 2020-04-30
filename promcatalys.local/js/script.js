@@ -62,45 +62,47 @@ window.addEventListener('DOMContentLoaded',
         }
 
         prodlist.addEventListener('click', function(event) {
-            let target = event.target;
-
-            if (target && target.classList.contains('product')) {
-                for (let i = 0; i < product.length; i++) {
-                    if (target == product[i]) {
-                        console.log(i);
-                        hideProdContent(0);
-                        showProdContent(i);
-                        break;
-                    }
-                }
+            let target = event.target.closest(".product");
+            if (!target) {
+                return;
             }
-        }, true);
-        prodlist.addEventListener('click', function(event) {
-            let target = event.target;
-
-            if (target && target.classList.contains('list-img')) {
-                for (let i = 0; i < img.length; i++) {
-                    if (target == img[i]) {
-                        console.log(i);
-                        hideProdContent(0);
-                        showProdContent(i);
-                        break;
-                    }
+            for (let i = 0; i < product.length; i++) {
+                //console.log(target);
+                if (target == product[i]) {
+                    hideProdContent(0);
+                    showProdContent(i);
+                    break;
                 }
-            }
-        }, true);
-        prodlist.addEventListener('click', function(event) {
-            let target = event.target;
 
-            if (target && target.classList.contains('prod-title')) {
-                for (let i = 0; i < title.length; i++) {
-                    if (target == title[i]) {
-                        console.log(i);
-                        hideProdContent(0);
-                        showProdContent(i);
-                        break;
-                    }
-                }
             }
+
         }, true);
+        // prodlist.addEventListener('click', function(event) {
+        //     let target = event.target;
+
+        //     if (target && target.classList.contains('list-img')) {
+        //         for (let i = 0; i < img.length; i++) {
+        //             if (target == img[i]) {
+        //                 console.log(i);
+        //                 hideProdContent(0);
+        //                 showProdContent(i);
+        //                 break;
+        //             }
+        //         }
+        //     }
+        // }, true);
+        // prodlist.addEventListener('click', function(event) {
+        //     let target = event.target;
+
+        //     if (target && target.classList.contains('prod-title')) {
+        //         for (let i = 0; i < title.length; i++) {
+        //             if (target == title[i]) {
+        //                 console.log(i);
+        //                 hideProdContent(0);
+        //                 showProdContent(i);
+        //                 break;
+        //             }
+        //         }
+        //     }
+        // }, true);
     });
