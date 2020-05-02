@@ -109,5 +109,5 @@
         <div class="lbtn-sub-button"><button>Экологические</button></div>
         <div class="lbtn-sub-button"><button>Носители</button></div> -->
     <!-- <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>&nbsp; -->
-    
+    <script src="./js/lsbutton.js"></script>
 </div>

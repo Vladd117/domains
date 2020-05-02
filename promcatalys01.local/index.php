@@ -47,7 +47,7 @@
         </div>
         
     </div>
-    <script src="./js/lsbutton.js"></script>
+    
     <?php
     require_once './blocks/footer.php';
     ?>

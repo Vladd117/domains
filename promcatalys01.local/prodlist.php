@@ -14,7 +14,7 @@
 </head>
 
 <body>
-<?php
+    <?php
     require_once './blocks/header.php';
     ?>
     <a id="anchor"></a>
@@ -50,13 +50,14 @@
             </div>
 
         </div>
+        <script src="./js/script.js"></script>
+        
     </div>
-    <script src="./js/script.js"></script>
-    <script src="./js/lsbutton.js"></script>
+
     <?php
     require_once './blocks/footer.php';
     ?>
-    
+
 </body>
 
 </html>

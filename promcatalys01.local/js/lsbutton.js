@@ -1,4 +1,3 @@
-alert('ok');
 window.addEventListener('DOMContentLoaded',
     function() {
         let lsbutton = document.querySelectorAll('.lbtn-container'),
@@ -29,7 +28,7 @@ window.addEventListener('DOMContentLoaded',
 
         closeBar();
 
-        leftside.addEventListener('click', (event) => {
+        leftside.addEventListener('click', function(event) {
             let target = event.target.closest('.lbtn-container');
             for (let i = 0; i < lsbutton.length; i++) {
                 if (target == lsbutton[i]) {
@@ -39,7 +38,7 @@ window.addEventListener('DOMContentLoaded',
             }
 
         });
-        leftside.addEventListener('mouseover', (event) => {
+        leftside.addEventListener('mouseover', function(event) {
             let target = event.target.closest('.lbtn-container');
             for (let i = 0; i < lsbutton.length; i++) {
                 if (target == lsbutton[i] && lsbutton[i].style.maxHeight == '2.6em') {
@@ -53,7 +52,7 @@ window.addEventListener('DOMContentLoaded',
                 }
             }
         });
-        leftside.addEventListener('mouseout', (event) => {
+        leftside.addEventListener('mouseout', function(event) {
             let target = event.target.closest('.lbtn-container');
             for (let i = 0; i < lsbutton.length; i++) {
                 if (target == lsbutton[i] && lsbutton[i].style.maxHeight == '25em') {
