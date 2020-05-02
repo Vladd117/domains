@@ -67,7 +67,7 @@ window.addEventListener('DOMContentLoaded',
                 return;
             } else {
                 for (let i = 0; i < product.length; i++) {
-                    if (target) {
+                    if (target == product[i]) {
                         hideProdContent(0);
                         showProdContent(i);
                         break;

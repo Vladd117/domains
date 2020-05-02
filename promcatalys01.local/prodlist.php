@@ -10,6 +10,7 @@
     $website_title = $title;
     require_once './blocks/head.php';
     ?>
+    <script src="./js/closes.js"></script>
 </head>
 
 <body>
@@ -36,7 +37,7 @@
                     $query->execute(array('category' => $category));
 
                     while ($row = $query->fetch(PDO::FETCH_OBJ)) {
-                        echo "</a><div class='product amin-product'>
+                        echo "</a><div class='product anim-product'>
                         <div class='list-img' style='background: url(./img/prod/$row->img.jpg)'></div>
                         <div class='prod-title'>$row->title</div>
                         <div class='prod-text'>$row->text</div>
