@@ -30,6 +30,13 @@
             include './blocks/leftsidebar.php';
             ?>
             <div class="content">
+                <div class="intro-box">
+                    <div class="intro-img"><img src="./intro_img/1.jpg"></div>
+                    <div class="intro-img"><img src="./intro_img/2.jpg"></div>
+                    <div class="intro-img"><img src="./intro_img/3.jpg"></div>
+                    <div class="intro-img"><img src="./intro_img/4.jpg"></div>
+                    <script src="./js/intro.js"></script>
+                </div>
 
                 <h1><?= $article->title ?></h1>
                 <p><?= $article->text ?></p>
@@ -38,7 +45,9 @@
             </div>
 
         </div>
+        
     </div>
+    <script src="./js/lsbutton.js"></script>
     <?php
     require_once './blocks/footer.php';
     ?>

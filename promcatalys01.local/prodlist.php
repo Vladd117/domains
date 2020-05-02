@@ -52,6 +52,7 @@
         </div>
     </div>
     <script src="./js/script.js"></script>
+    <script src="./js/lsbutton.js"></script>
     <?php
     require_once './blocks/footer.php';
     ?>
