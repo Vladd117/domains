@@ -78,16 +78,19 @@
     left: 1em;
 } */
 
-.lbtn-container:hover .lbtn-circle {
+
+/* .lbtn-container:hover .lbtn-circle {
     width: 9.5em;
-}
+} */
 
 .lbtn-button-text {
     position: absolute;
     font-family: "SanFrancisco";
     font-weight: 500;
-    top: 0.9em;
-    padding: .2em 3.5em;
+    top: 1.3em;
+    text-align: left;
+    padding-left: 3.5em;
+    margin-top: -.2em;
     font-size: 0.8em;
     color: rgb(0, 36, 77);
     transition: color 0.5s;
@@ -106,13 +109,14 @@
     transition: color 0.5s;
 }
 
-.lbtn-container:hover .lbtn-button-text {
+
+/* .lbtn-container:hover .lbtn-button-text {
     color: white;
 }
 
 .lbtn-container:hover .lbtn-button-text2 {
     color: white;
-}
+} */
 
 .lbtn-sub-button {
     margin: .2em 0 0 2.5em;

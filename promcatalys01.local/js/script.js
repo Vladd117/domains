@@ -2,106 +2,112 @@ window.addEventListener('DOMContentLoaded',
     function() {
         'use strict';
         let product = document.querySelectorAll('.product'),
-            img = document.querySelectorAll('.list-img'),
-            title = document.querySelectorAll('.prod-title'),
-            prodlist = document.querySelector('.prodlist'),
-            prodText = document.querySelectorAll('.prod-text');
+            //listImg = document.querySelector('.list-img'),
+            prodText = document.querySelectorAll('.prod-text'),
+            cards = document.querySelectorAll('.card');
 
 
         function hideProdContent(a) {
-            // if (!product[a].classList.contains('hide-product')) {
             for (let i = a; i < product.length; i++) {
                 product[i].classList.remove('show-product');
                 product[i].classList.add('hide-product');
-                product[i].classList.add('anim-product');
-                if (prodText[i].classList.contains('show-text')) {
-                    prodText[i].classList.remove('show-text');
-                }
-                prodText[i].classList.add('hide-text');
-                //  }
+                //product[i].classList.add('anim-product');
+                product[i].style.backgroundColor = 'rgba(0, 174, 255, .1)';
+                // if (prodText[i].classList.contains('show-text')) {
+                //     prodText[i].classList.remove('show-text');
+                // }
+                // prodText[i].classList.add('hide-text');
             }
         }
         hideProdContent(0);
 
-        function showProdContent(b) {
-            //if (product[b].classList.contains('hide-product')) {
-            product[b].classList.remove('hide-product');
-            product[b].classList.remove('anim-product');
-            product[b].classList.add('show-product');
-            document.documentElement.scrollTop = product[b].offsetTop;
-            //setTimeout(() => {
-            prodText[b].classList.remove('hide-text');
-            prodText[b].classList.add('show-text');
-            //}, 100);
-            console.log(product[b].classList);
-            console.log('ok');
-            // setTimeout(() => {
-            scroll(product[b].offsetTop);
-            // }, 600);
-            // prodlist.classList.remove('hide');
-            // prodlist.classList.add('show');
-            // }
-        }
+        // function showProdContent(i) {
+        //     console.log(product[i].classList);
+        //     product[i].classList.remove('hide-product');
+        //     product[i].classList.add('show-product');
+        //     prodText[i].classList.remove('hide-text');
+        //     prodText[i].classList.add('show-text');
+        // }
 
-        function scroll(b) {
-            document.documentElement.scrollTop = b;
-            // if (document.documentElement.scrollTop < b) {
-            //     let scrl = setInterval(() => {
-            //         let scs = (b - document.documentElement.scrollTop) / 50 + 1;
-            //         document.documentElement.scrollTop += scs;
-            //         if (document.documentElement.scrollTop >= b) { clearInterval(scrl); }
-            //     }, 5);
-            // }
-            // if (document.documentElement.scrollTop > b) {
-            //     let scrl = setInterval(() => {
-            //         let scs = (document.documentElement.scrollTop - b) / 50 + 1;
-            //         document.documentElement.scrollTop -= scs;
-            //         if (document.documentElement.scrollTop <= b) { clearInterval(scrl); }
-            //     }, 5);
-            // }
-        }
 
-        prodlist.addEventListener('click', function(event) {
-            let target = event.target.closest(".product");
-            if (!target) {
-                return;
-            } else {
-                for (let i = 0; i < product.length; i++) {
-                    if (target == product[i]) {
-                        hideProdContent(0);
-                        showProdContent(i);
-                        break;
-                    }
-                }
+
+        // prodlist.addEventListener('click', function(event) {
+        //     let target = event.target.closest(".product");
+        //     if (!target) {
+        //         return;
+        //     } else {
+        //         for (let i = 0; i < product.length; i++) {
+        //             if (target == product[i]) {
+        //                 hideProdContent(0);
+        //                 showProdContent(i);
+        //                 break;
+        //             }
+        //         }
+        //     }
+
+        // }, true);
+
+
+
+
+        for (let i = 0; i < cards.length; i++) {
+            let card = cards[i];
+            if (product[i].classList.contains('hide-product')) {
+                card.addEventListener('click', function(event) {
+                    console.log(event.classList);
+                    hideProdContent(0);
+                    //showProdContent(i);
+                    event.target.classList.remove('hide-product');
+                    event.target.classList.add('show-product');
+                    event.target.style.transition = '0s';
+                    card.style.transition = '0s';
+                    document.documentElement.scrollTop = card.offsetTop;
+                    console.log(card.offsetTop);
+                    event.target.style.backgroundColor = 'rgb(255, 255, 255)';
+
+                    event.target.style.transform = 'rotate(0)';
+
+                });
+                card.addEventListener('mousemove', startRotate, true);
+                card.addEventListener('mouseout', stopRotate, true);
+
             }
+            if (!product[i].classList.contains('hide-product')) {
+                card.style.backgroundColor = 'rgba(0, 174, 255, 0)';
+                product[i].style.backgroundColor = 'rgba(0, 174, 255, 0)';
+                product[i].style.transform = 'rotate(0)';
+                product[i].style.transition = '0s';
+            }
+        }
+        const halfHeight = document.querySelector('.card').offsetHeight / 2;
+        const halfWidth = document.querySelector('.card').offsetWidth / 2;
 
-        }, true);
-        // prodlist.addEventListener('click', function(event) {
-        //     let target = event.target;
+        // function showProduct(i) {
+        //     hideProdContent(0);
+        //     showProdContent(i);
+        // }
 
-        //     if (target && target.classList.contains('list-img')) {
-        //         for (let i = 0; i < img.length; i++) {
-        //             if (target == img[i]) {
-        //                 console.log(i);
-        //                 hideProdContent(0);
-        //                 showProdContent(i);
-        //                 break;
-        //             }
-        //         }
-        //     }
-        // }, true);
-        // prodlist.addEventListener('click', function(event) {
-        //     let target = event.target;
+        function startRotate(event) {
 
-        //     if (target && target.classList.contains('prod-title')) {
-        //         for (let i = 0; i < title.length; i++) {
-        //             if (target == title[i]) {
-        //                 console.log(i);
-        //                 hideProdContent(0);
-        //                 showProdContent(i);
-        //                 break;
-        //             }
-        //         }
-        //     }
-        // }, true);
+            if (event.target.classList.contains('hide-product')) {
+                //console.log(event.target);
+                event.target.style.transition = '0.1s';
+                //event.target.style.borderColor = 'rgb(255, 100, 0)';
+                event.target.style.backgroundColor = 'rgba(0, 174, 255, 0.4)';
+                event.target.style.transform = 'rotateX(' + -
+                    (event.offsetY - halfHeight) / 7 + 'deg) rotateY(' +
+                    (event.offsetX - halfWidth) / 7 + 'deg) scale(1.1)';
+            } else { event.target.style.transition = '0s'; }
+        }
+
+        function stopRotate(event) {
+            if (!event.target.classList.contains('show-product')) {
+                event.target.style.backgroundColor = 'rgba(0, 174, 255, .1)';
+                event.target.style.transition = '0.5s';
+                event.target.style.transform = 'rotate(0)';
+                //event.target.style.borderColor = 'rgb(21, 110, 184)';
+                //console.log(event.target);
+            }
+        }
+
     });

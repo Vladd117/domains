@@ -69,8 +69,6 @@ body {
 }
 
 .header-logo .logo {
-    flex-basis: 0;
-    flex-grow: 1;
     padding-top: 2.5em;
 }
 
@@ -79,15 +77,15 @@ body {
 }
 
 .header-text {
+    text-align: left;
     font-family: "SanFrancisco";
-    flex-basis: 0;
-    flex-grow: 1;
     color: white;
     padding-left: 2em;
     padding-top: 4em;
 }
 
 .header-text .zao {
+    text-align: left;
     margin: 0;
     font-weight: 500;
     font-size: 1em;
@@ -95,6 +93,7 @@ body {
 }
 
 .header-text .pk {
+    text-align: left;
     padding: 0;
     margin: 0;
     font-weight: 900;
@@ -104,7 +103,7 @@ body {
 
 .header-cont {
     position: absolute;
-    left: 25%;
+    left: 30%;
     bottom: 1em;
     color: rgb(255, 255, 255);
     font-size: .8em;
@@ -112,8 +111,10 @@ body {
 }
 
 .header-cont-span {
+    font-size: 1.1em;
     display: inline-block;
     white-space: nowrap;
+    text-shadow: 0px 0px 2px 2px #001b57;
 }
 
 
@@ -127,20 +128,20 @@ body {
 
 .topbar {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     margin: auto;
     max-width: 1000px;
     background-color: rgb(255, 100, 0);
 }
 
 .tbtn {
-    flex-basis: initial;
+    display: inline-block;
     font-family: "SanFrancisco";
     font-weight: 500;
     border: 0;
     font-size: 0.9rem;
-    width: 100%;
-    padding: 0.5rem 1rem;
+    width: auto;
+    padding: 0.5rem 1.7em;
     background-color: rgb(255, 100, 0);
     color: white;
     white-space: nowrap;
@@ -155,17 +156,16 @@ body {
 /*Main*/
 
 .bg {
+    max-width: 100%;
     height: auto;
-    background-image: url(../img/bg.jpg);
+    background: url(../img/bg.jpg);
     background-repeat: no-repeat;
     background-position: center top;
     background-size: 100% auto;
-    background-color: #ffffff;
     min-height: 300px;
 }
 
 .main {
-    display: flex;
     max-width: 1000px;
     display: flex;
     margin: auto;
@@ -175,14 +175,13 @@ body {
 /*leftside bar*/
 
 .leftside {
-    flex-grow: 1;
-    flex-basis: 11rem;
+    min-width: 11em;
     text-align: center;
     font-weight: bold;
     min-height: 10em;
-    padding: .5em .5em;
+    padding: .5em 0;
     width: 11em;
-    background-color: rgb(0, 174, 255, 0.2);
+    background-color: rgba(0, 174, 255, 0.2);
 }
 
 .leftside-title {
@@ -197,14 +196,13 @@ body {
 
 .content {
     font-family: "SanFrancisco";
-    flex-grow: 1;
-    flex-basis: auto;
+    width: auto;
     max-width: 100%;
     font-size: .8em;
-    min-height: 20em;
+    min-height: 800px;
     text-align: justify;
     padding: 2em;
-    background-color: rgb(255, 255, 255, .6);
+    background-color: rgba(255, 255, 255, 0.6);
 }
 
 .content img {
@@ -268,6 +266,8 @@ h1 {
 }
 
 .footer-container {
+    font-family: "SanFrancisco";
+    font-weight: normal;
     font-size: 20px;
     max-width: 100%;
     background-image: url(../img/footer.jpg);
@@ -280,6 +280,8 @@ h1 {
 }
 
 .footer-cont {
+    font-family: "SanFrancisco";
+    font-weight: normal;
     font-size: 0.8em;
     margin: 0;
     padding: .5em 0em;
@@ -289,6 +291,8 @@ h1 {
 }
 
 .footer-partners {
+    font-family: "SanFrancisco";
+    font-weight: normal;
     text-align: center;
     font-size: 1em;
     margin: 0;
@@ -301,7 +305,7 @@ h1 {
 .footer-partners-imgs {
     max-width: 1000px;
     margin: auto;
-    background-color: rgb(255, 255, 255, .7);
+    background-color: rgba(255, 255, 255, .7);
     border-radius: 1em;
     margin-top: .2em;
 }
@@ -309,6 +313,21 @@ h1 {
 .footer-partners-imgs img {
     height: 70px;
     padding: 10px 10px;
+}
+
+.autograph {
+    font-family: "SanFrancisco";
+    font-weight: normal;
+    font-size: 0.7em;
+    margin-left: 2em;
+    padding: .5em 0em;
+    color: white;
+    text-align: left;
+    text-shadow: -1px 1px 0.2em #001b57, 0px 0px 0.1em #001b57;
+}
+
+.autograph a {
+    color: white;
 }
 
 
@@ -378,6 +397,18 @@ h1 {
     }
     .content {
         flex-basis: 100%;
+        min-height: 0;
+    }
+    .content img {
+        max-width: 100%;
+        object-fit: contain;
+        padding: 0;
+        margin: 0;
+        transform: none;
+        transition: none;
+    }
+    .content img:hover {
+        transform: none;
     }
     .topbar {
         flex-wrap: wrap;

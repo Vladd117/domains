@@ -7,7 +7,7 @@
             <div class="lbtn-circle">
                 <div class="lbtn-button-icon lbtn-rotate-450">></div>
             </div>
-            <div class="lbtn-button-text">Продукция</div>
+            <div class="lbtn-button-text lbtext">Продукция</div>
 
         </button>
         <a href="./prodlist.php?category=rif&title=Катализаторы риформинга#anchor">
@@ -43,7 +43,7 @@
             <div class="lbtn-circle">
                 <div class="lbtn-button-icon lbtn-rotate-450">></div>
             </div>
-            <div class="lbtn-button-text2">Технический сервис</div>
+            <div class="lbtn-button-text2 lbtext">Технический сервис</div>
 
         </button>
         <?php
@@ -87,7 +87,7 @@
             <div class="lbtn-circle">
                 <div class="lbtn-button-icon lbtn-rotate-450">></div>
             </div>
-            <div class="lbtn-button-text2">Аналитическая база</div>
+            <div class="lbtn-button-text2 lbtext">Аналитическая база</div>
 
         </button>
         <?php

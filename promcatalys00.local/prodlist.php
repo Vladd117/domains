@@ -10,15 +10,18 @@
     $website_title = $title;
     require_once './blocks/head.php';
     ?>
+    <script src="./js/closes.js"></script>
 </head>
 
 <body>
     <?php
     require_once './blocks/header.php';
-
+    ?>
+    <a id="anchor"></a>
+    <?php
     require_once './blocks/topmenu.php';
     ?>
-    <main class="bg">
+    <div class="bg">
 
         <div class="main">
             <?php
@@ -27,17 +30,18 @@
             <div class="content">
                 <h1 style="text-align: center; margin: auto"><?= $title ?></h1>
                 <br>
-                <div class='prodlist'>
+                <div class='prodlist show'>
                     <?php
                     $sql = 'SELECT * FROM `production` WHERE `category` = :category';
                     $query = $pdo->prepare($sql);
-                    $query->execute(['category' => $category]);
+                    $query->execute(array('category' => $category));
 
                     while ($row = $query->fetch(PDO::FETCH_OBJ)) {
-                        echo "<a href = '../product.php?id=$row->id&category=$row->category'><div class='product'>
+                        echo "</a><div class='product anim-product'>
                         <div class='list-img' style='background: url(./img/prod/$row->img.jpg)'></div>
                         <div class='prod-title'>$row->title</div>
-                    </div></a>";
+                        <div class='prod-text'>$row->text</div>
+                    </div>";
                     }
                     ?>
                 </div>
@@ -46,10 +50,14 @@
             </div>
 
         </div>
-    </main>
+        <script src="./js/script.js"></script>
+        
+    </div>
+
     <?php
     require_once './blocks/footer.php';
     ?>
+
 </body>
 
 </html>

@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 
 <head>
     <?php
     require_once('./db/connectdb.php');
-    $sql = 'SELECT * FROM `articles` WHERE `location` = :location';
+    $sql = 'SELECT * FROM `articles` WHERE `location` = ?';
     $location = 'main';
-    
+
     $query = $pdo->prepare($sql);
-    $query->execute(['location' => $location]);
+    $query->execute(array($location));
 
     $article = $query->fetch(PDO::FETCH_OBJ);
 
@@ -23,13 +23,20 @@
 
     require_once './blocks/topmenu.php';
     ?>
-    <main class="bg">
+    <div class="bg">
 
         <div class="main">
             <?php
             include './blocks/leftsidebar.php';
             ?>
             <div class="content">
+                <div class="intro-box">
+                    <div class="intro-img"><img src="./intro_img/1.jpg"></div>
+                    <div class="intro-img"><img src="./intro_img/2.jpg"></div>
+                    <div class="intro-img"><img src="./intro_img/3.jpg"></div>
+                    <div class="intro-img"><img src="./intro_img/4.jpg"></div>
+                    <script src="./js/intro.js"></script>
+                </div>
 
                 <h1><?= $article->title ?></h1>
                 <p><?= $article->text ?></p>
@@ -38,7 +45,9 @@
             </div>
 
         </div>
-    </main>
+        
+    </div>
+    
     <?php
     require_once './blocks/footer.php';
     ?>

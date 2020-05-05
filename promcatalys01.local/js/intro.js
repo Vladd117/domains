@@ -15,7 +15,7 @@ let intro = {
             intro.introImg[intro.nextSlide].style.transform = "scale(2)";
             intro.introImg[intro.nextSlide].style.opacity = 0;
             intro.slideUp();
-        }, 7000);
+        }, 5000);
     },
 };
 window.addEventListener('DOMContentLoaded', function() {
