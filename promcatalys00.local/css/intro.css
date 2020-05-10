@@ -8,6 +8,7 @@
     max-height: 225px;
     width: 860px;
     height: 225px;
+    border-radius: 10px;
 }
 
 .intro-img {
@@ -29,4 +30,10 @@
 
 .intro-img:hover {
     transform: scale(1);
+}
+
+@media(max-width: 800px) {
+    .intro-box {
+        display: none;
+    }
 }

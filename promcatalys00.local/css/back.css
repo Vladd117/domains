@@ -1,0 +1,41 @@
+.back {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    min-height: 100vh;
+    z-index: -1;
+    opacity: .8;
+}
+
+.paralax {
+    width: 110%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* min-height: 100vh; */
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -10%;
+    right: 0;
+}
+
+.paralax-l1 {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../img/back.jpg);
+}
+
+.paralax-l2 {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../img/middle.png);
+}
+
+.paralax-l3 {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../img/front.png);
+}

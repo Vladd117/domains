@@ -1,4 +1,4 @@
-<footer class="footer-container">
+<div class="footer-container">
     <div class="footer-partners">
         Наши партнеры:
         <div class="footer-partners-imgs">
@@ -18,4 +18,4 @@
         Сайт полностью изготовлен <a href="https://vk.com/suhanovv">Владиславом Сухановым </a>
     </div>
 
-</footer>
+</div>
