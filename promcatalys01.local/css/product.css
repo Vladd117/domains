@@ -1,5 +1,5 @@
 .prod-content {
-    font-family: "SanFrancisco";
+    font-family: "Roboto";
     max-width: 100%;
     font-size: .8em;
     min-height: 20em;
@@ -9,7 +9,7 @@
 }
 
 .prod-content strong {
-    font-family: "SanFrancisco";
+    font-family: "Roboto";
     font-weight: 700;
 }
 
@@ -43,7 +43,7 @@
 
 .product-title {
     flex-basis: 70%;
-    font-family: 'SanFrancisco';
+    font-family: 'Roboto';
     font-weight: 500;
     margin: 3em 0 0 1em;
     text-align: left;
@@ -62,7 +62,7 @@ table {
 
 .tg-heading {
     text-align: center;
-    font-family: 'SanFrancisco';
+    font-family: 'Roboto';
     font-weight: 500;
     border: 1px solid rgb(255, 255, 255);
     margin: 0;
@@ -72,7 +72,7 @@ table {
 }
 
 .tg-cell-first {
-    font-family: 'SanFrancisco';
+    font-family: 'Roboto';
     padding: 5px 15px;
     font-weight: normal;
     border: 1px solid black;
@@ -80,7 +80,7 @@ table {
 
 .tg-cell-last {
     text-align: left;
-    font-family: 'SanFrancisco';
+    font-family: 'Roboto';
     font-weight: normal;
     padding: 5px 15px;
     border: 1px solid black;

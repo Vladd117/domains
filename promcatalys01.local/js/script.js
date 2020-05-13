@@ -20,14 +20,28 @@ window.addEventListener('DOMContentLoaded',
         hideProdContent(0);
 
         function showProdContent(i) {
-            console.log(product[i].classList);
+            //console.log(product[i].classList);
             product[i].classList.remove('hide-product');
             product[i].classList.add('show-product');
             prodText[i].classList.remove('hide-text');
             prodText[i].classList.add('show-text');
             product[i].style.backgroundColor = 'white';
             listImg[i].style.borderColor = 'rgb(255, 100, 0)';
-            document.documentElement.scrollTop = cards[i].offsetTop;
+            //document.documentElement.scrollTop = cards[i].offsetTop + 300;
+            //console.log(cards[i] + '     ' + cards[i].offsetTop);
+
+            // setTimeout(() => {
+            //     console.log(cards[i] + '     ' + cards[i].offsetTop);
+            // }, 1000);
+        }
+
+        function scroll() {
+            for (let i = 0; i < product.length; i++) {
+                if (product[i].classList.contains('show-product')) {
+                    document.documentElement.scrollTop = product[i].parentElement.offsetTop + 300;
+                    console.log(window.pageYOffset);
+                }
+            }
         }
 
         prodlist.addEventListener('click', function(event) {
@@ -41,11 +55,12 @@ window.addEventListener('DOMContentLoaded',
 
                     event.target.style.borderColor = 'rgb(21, 110, 184)';
                     event.target.style.backgroundColor = 'rgb(195, 236, 255)';
-                    console.log(event.target.parentNode.offsetTop);
-                    console.log(event.target.style.transition);
+                    //console.log(event.target.parentNode.offsetTop);
+                    //console.log(event.target.style.transition);
 
                     hideProdContent(0);
                     showProdContent(i);
+                    scroll();
 
                     break;
                 }

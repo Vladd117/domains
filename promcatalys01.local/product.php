@@ -22,8 +22,9 @@
         <div class="paralax paralax-l1"></div>
         <div class="paralax paralax-l2"></div>
         <div class="paralax paralax-l3"></div>
-        <script src="./js/back.js"></script>
+        
     </div>
+    <script src="./js/back.js"></script>
     <?php
     require_once './blocks/header.php';
     ?>

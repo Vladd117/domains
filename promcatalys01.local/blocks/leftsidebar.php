@@ -1,6 +1,6 @@
 
 <div class="leftside">
-
+<div class="allbuttons">
     <!-- Animated button -->
     <div class="lbtn-container">
         <button class="lbtn-learn-more">
@@ -109,5 +109,7 @@
         <div class="lbtn-sub-button"><button>Экологические</button></div>
         <div class="lbtn-sub-button"><button>Носители</button></div> -->
     <!-- <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>&nbsp; -->
+       </div>
+   
     <script src="./js/lsbutton.js"></script>
 </div>

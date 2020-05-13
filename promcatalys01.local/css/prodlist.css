@@ -1,4 +1,5 @@
-body {
+body,
+.bg {
     transform: translateZ(-200px);
     perspective: none;
     -webkit-perspective: none;
@@ -21,7 +22,7 @@ body {
     transform-style: preserve-3d;
     -webkit-transform-style: preserve-3d;
     vertical-align: top;
-    transform: translateZ(200px);
+    transform: translateZ(300px);
     pointer-events: none;
 }
 
@@ -36,7 +37,7 @@ body {
     padding: 10px;
     text-align: center;
     pointer-events: auto;
-    will-change: transform;
+    /* will-change: transform; */
     transition: border-color 0.5s, transform 0.5s;
 }
 

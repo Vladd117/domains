@@ -1,30 +1,66 @@
 @font-face {
-    font-family: 'SanFrancisco';
-    src: url("../fonts/SFUIDisplay-Regular.woff") format('woff');
+    font-family: 'Roboto';
+    src: url("../fonts/Roboto-Regular.woff") format('woff');
+    font-weight: normal;
 }
 
 @font-face {
-    font-family: 'SanFrancisco';
-    src: url("../fonts/SFUIDisplay-Heavy.woff") format('woff');
+    font-family: 'Roboto';
+    src: url("../fonts/Roboto-Italic.woff") format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url("../fonts/Roboto-Black.woff") format('woff');
     font-weight: 900;
 }
 
 @font-face {
-    font-family: 'SanFrancisco';
-    src: url("../fonts/SFUIDisplay-Bold.woff") format('woff');
-    font-weight: 700;
+    font-family: 'Roboto';
+    src: url("../fonts/Roboto-BlackItalic.woff") format('woff');
+    font-weight: 900;
+    font-style: italic;
 }
 
 @font-face {
-    font-family: 'SanFrancisco';
-    src: url("../fonts/SFUIDisplay-Medium.woff") format('woff');
+    font-family: 'Roboto';
+    src: url("../fonts/Roboto-Bold.woff") format('woff');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url("../fonts/Roboto-BoldItalic.woff") format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url("../fonts/Roboto-Medium.woff") format('woff');
     font-weight: 500;
 }
 
 @font-face {
-    font-family: 'SanFrancisco';
-    src: url("../fonts/SFUIDisplay-Light.woff") format('woff');
+    font-family: 'Roboto';
+    src: url("../fonts/Roboto-MediumItalic.woff") format('woff');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url("../fonts/Roboto-Light.woff") format('woff');
     font-weight: 200;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url("../fonts/Roboto-LightItalic.woff") format('woff');
+    font-weight: 200;
+    font-style: italic;
 }
 
 html {
@@ -32,7 +68,7 @@ html {
 }
 
 body {
-    font-family: 'SanFrancisco';
+    font-family: 'Roboto';
 }
 
 *,
@@ -52,6 +88,7 @@ body {
     font-size: 20px;
     max-width: 100%;
     margin: 0;
+    padding: 0;
     background-image: url(../img/header.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -79,7 +116,7 @@ body {
 
 .header-text {
     text-align: left;
-    font-family: "SanFrancisco";
+    font-family: "Roboto";
     color: white;
     padding-left: 2em;
     padding-top: 4em;
@@ -122,6 +159,9 @@ body {
 /*Top side bar*/
 
 .topbar-container {
+    position: sticky;
+    top: 0;
+    z-index: 3;
     width: 100%;
     padding: 0;
     background-color: rgb(255, 100, 0);
@@ -138,7 +178,7 @@ body {
 
 .tbtn {
     display: inline-block;
-    font-family: "SanFrancisco";
+    font-family: "Roboto";
     font-weight: 500;
     border: 0;
     font-size: 0.9rem;
@@ -197,7 +237,7 @@ body {
 /*Content*/
 
 .content {
-    font-family: "SanFrancisco";
+    font-family: "Roboto";
     /* width: auto; */
     max-width: 924px;
     font-size: .8em;
@@ -214,7 +254,7 @@ body {
 }
 
 .content img:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 .img {
@@ -261,7 +301,7 @@ h1 {
 
 
 /* .content strong {
-    font-family: "SanFrancisco";
+    font-family: "Roboto";
     font-size: 1em;
     text-align: justify;
     font-weight: 500;
@@ -274,7 +314,7 @@ h1 {
 }
 
 .footer-container {
-    font-family: "SanFrancisco";
+    font-family: "Roboto";
     font-weight: normal;
     font-size: 20px;
     max-width: 100%;
@@ -288,7 +328,7 @@ h1 {
 }
 
 .footer-cont {
-    font-family: "SanFrancisco";
+    font-family: "Roboto";
     font-weight: normal;
     font-size: 0.8em;
     margin: 0;
@@ -299,7 +339,7 @@ h1 {
 }
 
 .footer-partners {
-    font-family: "SanFrancisco";
+    font-family: "Roboto";
     font-weight: normal;
     text-align: center;
     font-size: 1em;
@@ -324,7 +364,7 @@ h1 {
 }
 
 .autograph {
-    font-family: "SanFrancisco";
+    font-family: "Roboto";
     font-weight: normal;
     font-size: 0.7em;
     margin-left: 2em;
