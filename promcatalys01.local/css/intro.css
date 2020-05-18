@@ -1,6 +1,5 @@
 .intro-box {
     top: 0;
-    overflow: hidden;
     margin: 0;
     padding: 0;
     position: relative;
@@ -9,6 +8,7 @@
     width: 860px;
     height: 225px;
     border-radius: 10px;
+    overflow: hidden;
 }
 
 .intro-img {

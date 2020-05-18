@@ -96,6 +96,7 @@ body {
     background-color: #003060;
     min-height: 300px;
     position: relative;
+    z-index: 3;
 }
 
 .header-logo {
@@ -161,7 +162,7 @@ body {
 .topbar-container {
     position: sticky;
     top: 0;
-    z-index: 3;
+    z-index: 4;
     width: 100%;
     padding: 0;
     background-color: rgb(255, 100, 0);
@@ -211,6 +212,7 @@ body {
     max-width: 1144px;
     display: flex;
     margin: auto;
+    z-index: 1;
 }
 
 
@@ -224,6 +226,7 @@ body {
     padding: .5em 0;
     width: 11em;
     background-color: rgba(0, 174, 255, 0.2);
+    z-index: 2;
 }
 
 .leftside-title {
@@ -245,12 +248,14 @@ body {
     text-align: justify;
     padding: 2em;
     background-color: rgba(255, 255, 255, 0.6);
+    z-index: 2;
 }
 
 .content img {
     padding: 1em;
     transform: scale(1);
     transition: transform 0.5s;
+    border-radius: 10px;
 }
 
 .content img:hover {
@@ -457,6 +462,9 @@ h1 {
     }
     .content img:hover {
         transform: none;
+    }
+    .topbar-container {
+        position: relative;
     }
     .topbar {
         flex-wrap: wrap;

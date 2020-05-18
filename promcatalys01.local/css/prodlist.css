@@ -1,15 +1,16 @@
-body,
+/* body,
 .bg {
     transform: translateZ(-200px);
     perspective: none;
     -webkit-perspective: none;
     transform-style: flat;
     -webkit-transform-style: flat;
-}
+} */
 
 .prodlist {
     justify-content: center;
     text-align: center;
+    z-index: 2;
 }
 
 .card {

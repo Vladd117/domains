@@ -38,7 +38,7 @@ window.addEventListener('DOMContentLoaded',
         function scroll() {
             for (let i = 0; i < product.length; i++) {
                 if (product[i].classList.contains('show-product')) {
-                    document.documentElement.scrollTop = product[i].parentElement.offsetTop + 300;
+                    document.documentElement.scrollTop = product[i].parentElement.offsetTop;
                     console.log(window.pageYOffset);
                 }
             }
@@ -120,7 +120,6 @@ window.addEventListener('DOMContentLoaded',
 
         function startRotate(event) {
             if (event.target.classList.contains('hide-product')) {
-                event.target.zIndex = '1000';
                 event.target.style.transition = 'transform 0.1s';
                 event.target.style.transform = 'rotateX(' + -
                     (event.offsetY - halfHeight) / 7 + 'deg) rotateY(' +
@@ -130,7 +129,6 @@ window.addEventListener('DOMContentLoaded',
 
         function stopRotate(event) {
             if (!event.target.classList.contains('show-product')) {
-                event.target.zIndex = '100';
                 event.target.style.transition = 'borderColor 0.5s, transform 0.5s';
                 event.target.style.transform = 'rotate(0) translateZ(0px) scale(1)';
             }
