@@ -30,10 +30,10 @@
         ?>
         <div class="content">
             <div class="intro-box">
-                <div class="intro-img"><img src="./intro_img/1.jpg"></div>
-                <div class="intro-img"><img src="./intro_img/2.jpg"></div>
-                <div class="intro-img"><img src="./intro_img/3.jpg"></div>
-                <div class="intro-img"><img src="./intro_img/4.jpg"></div>
+                <div class="intro-img"><img style="margin: 0" src="./intro_img/1.jpg"></div>
+                <div class="intro-img"><img style="margin: 0" src="./intro_img/2.jpg"></div>
+                <div class="intro-img"><img style="margin: 0" src="./intro_img/3.jpg"></div>
+                <div class="intro-img"><img style="margin: 0" src="./intro_img/4.jpg"></div>
                 <script src="./js/intro.js"></script>
             </div>
 
