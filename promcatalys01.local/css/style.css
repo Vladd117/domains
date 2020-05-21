@@ -252,17 +252,41 @@ body {
 }
 
 .content img {
-    padding: 1em;
+    margin: 1.5em 0;
     transform: scale(1);
     transition: transform 0.5s;
     border-radius: 10px;
+    width: 100%;
 }
 
 .content img:hover {
-    transform: scale(1.05);
+    transform: scale(1.02);
 }
 
 .img {
+    text-align: center;
+    margin: 1.5em 0;
+    transform: scale(1);
+    transition: transform 0.5s;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.iso-imgs {
+    width: 100%;
+    display: inline-block;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.img-iso {
+    margin: 1em;
+    display: inline-block;
+    text-align: center;
+}
+
+.img-iso img {
+    max-width: 250px;
     text-align: center;
 }
 
