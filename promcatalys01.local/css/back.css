@@ -15,8 +15,9 @@ body {
     right: 0;
     min-height: 100vh;
     max-height: 100vh;
-    z-index: 1;
+    z-index: -1;
     opacity: .8;
+    pointer-events: none;
 }
 
 .paralax {
@@ -33,6 +34,7 @@ body {
     bottom: 0;
     left: -10%;
     right: 0;
+    pointer-events: none;
 }
 
 .paralax-l1 {
@@ -40,6 +42,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-image: url(../img/back.jpg);
+    pointer-events: none;
 }
 
 .paralax-l2 {
@@ -47,6 +50,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-image: url(../img/middle.png);
+    pointer-events: none;
 }
 
 .paralax-l3 {
@@ -54,4 +58,5 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-image: url(../img/front.png);
+    pointer-events: none;
 }
