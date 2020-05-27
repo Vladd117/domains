@@ -38,7 +38,7 @@ window.addEventListener('DOMContentLoaded',
         function scroll() {
             for (let i = 0; i < product.length; i++) {
                 if (product[i].classList.contains('show-product')) {
-                    document.documentElement.scrollTop = product[i].parentElement.offsetTop;
+                    document.documentElement.scrollTop = product[i].parentElement.offsetTop - 35;
                     console.log(window.pageYOffset);
                 }
             }
