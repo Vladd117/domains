@@ -439,7 +439,7 @@ h1 {
     }
 }
 
-@media(max-width: 800px) {
+@media(max-width: 820px) {
     .header-container {
         max-width: 100%;
         min-height: 200px;
@@ -473,7 +473,10 @@ h1 {
         flex-basis: 100%;
     }
     .content {
-        flex-basis: 100%;
+        max-width: 100%;
+        padding: 1em;
+        margin: 0;
+        /* flex-basis: 100%; */
         min-height: 0;
     }
     .content img {
