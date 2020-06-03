@@ -259,6 +259,12 @@ body {
     width: 100%;
 }
 
+.content a {
+    color: #003a60;
+    font-style: normal;
+    text-decoration: none;
+}
+
 .content img:hover {
     transform: scale(1.02);
 }
@@ -270,6 +276,46 @@ body {
     transition: transform 0.5s;
     border-radius: 10px;
     width: 100%;
+}
+
+.content .p-card {
+    width: fit-content;
+    box-sizing: content-box;
+    justify-content: space-between;
+    background-color: rgba(112, 208, 253, 0.2);
+    border: rgb(21, 110, 184) solid 1px;
+    border-radius: 10px;
+    max-width: 300px;
+    align-items: center;
+    margin: 10px 7px 10px 7px;
+    padding: 10px 7px 10px 7px;
+    margin: 10px auto;
+    transition: 0.5s;
+}
+
+.content .p-card:hover {
+    background-color: rgba(112, 208, 253, 0.5);
+    border: rgb(253, 135, 0) solid 1px;
+    transform: scale(1.05);
+}
+
+.content .logo-pdf {
+    pointer-events: none;
+    margin: auto;
+    display: block;
+    min-width: 60px;
+    min-height: 70px;
+    background-image: url(../img/logo-pdf.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.content .p-text {
+    pointer-events: none;
+    margin: 10px auto 0 auto;
+    bottom: 50%;
+    display: block;
 }
 
 .iso-imgs {

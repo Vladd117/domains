@@ -18,7 +18,7 @@
 </head>
 
 <body>
-    
+
     <?php
     require_once './blocks/header.php';
 
@@ -36,6 +36,12 @@
                 <div class="intro-img"><img style="margin: 0" src="./intro_img/4.jpg"></div>
                 <script src="./js/intro.js"></script>
             </div>
+            <a href="./img/promcatalys-card.pdf" target="_blank" title="Карта партнера">
+                <div class="p-card">
+                    <div class="logo-pdf"></div>
+                    <div class="p-text">Скачать карту партнера</div>
+                </div>
+            </a>
 
             <h1><?= $article->title ?></h1>
             <p><?= $article->text ?></p>
