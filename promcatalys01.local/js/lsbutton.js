@@ -16,7 +16,7 @@ window.addEventListener('DOMContentLoaded',
 
         function openedBar() {
             for (let i = 0; i < lsbutton.length; i++) {
-                if (lsbutton[i].style.maxHeight == '25em') {
+                if (lsbutton[i].style.maxHeight == '30em') {
                     circle[i].style.width = '9.5em';
 
                 }
@@ -26,7 +26,7 @@ window.addEventListener('DOMContentLoaded',
         function openBar(i) {
             console.log(lsbutton[i].style.maxHeight);
             if (lsbutton[i].style.maxHeight == '2.6em') {
-                lsbutton[i].style.maxHeight = '25em';
+                lsbutton[i].style.maxHeight = '30em';
                 rotate[i].style.transform = 'rotate(450deg)';
 
             } else {
@@ -57,7 +57,7 @@ window.addEventListener('DOMContentLoaded',
                     before[i].dataset.before = '>';
                     before[i].style.left = '1em';
                 }
-                if (lsbutton[i].style.maxHeight == '25em') {
+                if (lsbutton[i].style.maxHeight == '30em') {
                     text[i].style.color = 'white';
                     circle[i].style.width = '9.5em';
                     before[i].style.left = '1em';
@@ -69,7 +69,7 @@ window.addEventListener('DOMContentLoaded',
         leftside.addEventListener('mouseout', function(event) {
             let target = event.target.closest('.lbtn-container');
             for (let i = 0; i < lsbutton.length; i++) {
-                if (target == lsbutton[i] && lsbutton[i].style.maxHeight == '25em') {
+                if (target == lsbutton[i] && lsbutton[i].style.maxHeight == '30em') {
                     rotate[i].style.transform = 'rotate(450deg)';
                     circle[i].style.width = '9.5em';
                     before[i].dataset.before = '>';
@@ -77,7 +77,7 @@ window.addEventListener('DOMContentLoaded',
                     text[i].style.color = 'white';
 
                 } else {
-                    if (lsbutton[i].style.maxHeight != '25em') {
+                    if (lsbutton[i].style.maxHeight != '30em') {
                         rotate[i].style.transform = 'rotate(0deg)';
                         circle[i].style.width = '2.5em';
                         text[i].style.color = 'rgb(0,36,77)';
