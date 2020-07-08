@@ -33,7 +33,7 @@
             <br>
             <div class='prodlist show'>
                 <?php
-                $sql = 'SELECT * FROM `production` WHERE `category` = :category';
+                $sql = 'SELECT * FROM `production` WHERE `category` = :category ORDER BY `weight`';
                 $query = $pdo->prepare($sql);
                 $query->execute(array('category' => $category));
 

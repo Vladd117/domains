@@ -2,107 +2,135 @@ window.addEventListener('DOMContentLoaded',
     function() {
         'use strict';
         let product = document.querySelectorAll('.product'),
-            img = document.querySelectorAll('.list-img'),
-            title = document.querySelectorAll('.prod-title'),
+            listImg = document.querySelectorAll('.list-img'),
+            prodText = document.querySelectorAll('.prod-text'),
             prodlist = document.querySelector('.prodlist'),
-            prodText = document.querySelectorAll('.prod-text');
+            cards = document.querySelectorAll('.card');
 
 
         function hideProdContent(a) {
-            // if (!product[a].classList.contains('hide-product')) {
             for (let i = a; i < product.length; i++) {
                 product[i].classList.remove('show-product');
                 product[i].classList.add('hide-product');
-                product[i].classList.add('anim-product');
-                if (prodText[i].classList.contains('show-text')) {
-                    prodText[i].classList.remove('show-text');
-                }
-                prodText[i].classList.add('hide-text');
-                //  }
+                listImg[i].style.borderColor = 'rgb(0, 174, 255)';
+                product[i].style.backgroundColor = 'rgb(195, 236, 255)';
+
             }
         }
         hideProdContent(0);
 
-        function showProdContent(b) {
-            //if (product[b].classList.contains('hide-product')) {
-            product[b].classList.remove('hide-product');
-            product[b].classList.remove('anim-product');
-            product[b].classList.add('show-product');
-            document.documentElement.scrollTop = product[b].offsetTop;
-            //setTimeout(() => {
-            prodText[b].classList.remove('hide-text');
-            prodText[b].classList.add('show-text');
-            //}, 100);
-            console.log(product[b].classList);
-            console.log('ok');
+        function showProdContent(i) {
+            //console.log(product[i].classList);
+            product[i].classList.remove('hide-product');
+            product[i].classList.add('show-product');
+            prodText[i].classList.remove('hide-text');
+            prodText[i].classList.add('show-text');
+            product[i].style.backgroundColor = 'white';
+            listImg[i].style.borderColor = 'rgb(255, 100, 0)';
+            //document.documentElement.scrollTop = cards[i].offsetTop + 300;
+            //console.log(cards[i] + '     ' + cards[i].offsetTop);
+
             // setTimeout(() => {
-            scroll(product[b].offsetTop);
-            // }, 600);
-            // prodlist.classList.remove('hide');
-            // prodlist.classList.add('show');
-            // }
+            //     console.log(cards[i] + '     ' + cards[i].offsetTop);
+            // }, 1000);
         }
 
-        function scroll(b) {
-            document.documentElement.scrollTop = b;
-            // if (document.documentElement.scrollTop < b) {
-            //     let scrl = setInterval(() => {
-            //         let scs = (b - document.documentElement.scrollTop) / 50 + 1;
-            //         document.documentElement.scrollTop += scs;
-            //         if (document.documentElement.scrollTop >= b) { clearInterval(scrl); }
-            //     }, 5);
-            // }
-            // if (document.documentElement.scrollTop > b) {
-            //     let scrl = setInterval(() => {
-            //         let scs = (document.documentElement.scrollTop - b) / 50 + 1;
-            //         document.documentElement.scrollTop -= scs;
-            //         if (document.documentElement.scrollTop <= b) { clearInterval(scrl); }
-            //     }, 5);
-            // }
+        function scroll() {
+            for (let i = 0; i < product.length; i++) {
+                if (product[i].classList.contains('show-product')) {
+                    document.documentElement.scrollTop = product[i].parentElement.offsetTop - 35;
+                    console.log(window.pageYOffset);
+                }
+            }
         }
 
         prodlist.addEventListener('click', function(event) {
-            let target = event.target.closest(".product");
-            if (!target) {
-                return;
-            }
+
             for (let i = 0; i < product.length; i++) {
-                //console.log(target);
-                if (target == product[i]) {
+                if (event.target == product[i]) {
+
+                    event.target.style.transform = 'rotate(0)';
+                    event.target.style.transition = 'none';
+                    listImg[i].style.transform = 'scale(1)';
+
+                    event.target.style.borderColor = 'rgb(21, 110, 184)';
+                    event.target.style.backgroundColor = 'rgb(195, 236, 255)';
+                    //console.log(event.target.parentNode.offsetTop);
+                    //console.log(event.target.style.transition);
+
                     hideProdContent(0);
                     showProdContent(i);
+                    scroll();
+
                     break;
                 }
+            }
+        }, true);
 
+        prodlist.addEventListener('mousemove', function(event) {
+            let target = event.target;
+            if (target && target.classList.contains('hide-product')) {
+                for (let i = 0; i < product.length; i++) {
+                    if (target == product[i]) {
+                        startRotate(event);
+                        break;
+                    }
+                }
+            } else { return; }
+
+        }, true);
+
+        prodlist.addEventListener('mouseover', function(event) {
+            let target = event.target;
+            if (target && target.classList.contains('hide-product')) {
+
+                for (let i = 0; i < product.length; i++) {
+                    if (target == product[i] && target.classList.contains('hide-product')) {
+                        listImg[i].style.transform = 'scale(1.1)';
+                        listImg[i].style.borderColor = 'rgb(255, 100, 0)';
+                        target.style.borderColor = 'rgb(255, 100, 0)';
+                        target.style.backgroundColor = 'rgb(149, 222, 255)';
+                        break;
+                    }
+                }
             }
 
         }, true);
-        // prodlist.addEventListener('click', function(event) {
-        //     let target = event.target;
 
-        //     if (target && target.classList.contains('list-img')) {
-        //         for (let i = 0; i < img.length; i++) {
-        //             if (target == img[i]) {
-        //                 console.log(i);
-        //                 hideProdContent(0);
-        //                 showProdContent(i);
-        //                 break;
-        //             }
-        //         }
-        //     }
-        // }, true);
-        // prodlist.addEventListener('click', function(event) {
-        //     let target = event.target;
+        prodlist.addEventListener('mouseout', function(event) {
+            let target = event.target;
+            if (target && target.classList.contains('hide-product')) {
+                for (let i = 0; i < product.length; i++) {
+                    if (target == product[i]) {
+                        listImg[i].style.transform = 'scale(1)';
+                        listImg[i].style.borderColor = 'rgb(0, 174, 255)';
+                        target.style.borderColor = 'rgb(21, 110, 184)';
+                        target.style.backgroundColor = 'rgb(195, 236, 255)';
+                        stopRotate(event);
+                        break;
+                    }
+                }
+            }
 
-        //     if (target && target.classList.contains('prod-title')) {
-        //         for (let i = 0; i < title.length; i++) {
-        //             if (target == title[i]) {
-        //                 console.log(i);
-        //                 hideProdContent(0);
-        //                 showProdContent(i);
-        //                 break;
-        //             }
-        //         }
-        //     }
-        // }, true);
+        }, true);
+
+
+        const halfHeight = document.querySelector('.card').offsetHeight / 2;
+        const halfWidth = document.querySelector('.card').offsetWidth / 2;
+
+        function startRotate(event) {
+            if (event.target.classList.contains('hide-product')) {
+                event.target.style.transition = 'transform 0.1s';
+                event.target.style.transform = 'rotateX(' + -
+                    (event.offsetY - halfHeight) / 7 + 'deg) rotateY(' +
+                    (event.offsetX - halfWidth) / 7 + 'deg) scale(1.05) translateZ(10px)';
+            } else { event.target.style.transition = '0s'; }
+        }
+
+        function stopRotate(event) {
+            if (!event.target.classList.contains('show-product')) {
+                event.target.style.transition = 'borderColor 0.5s, transform 0.5s';
+                event.target.style.transform = 'rotate(0) translateZ(0px) scale(1)';
+            }
+        }
     });

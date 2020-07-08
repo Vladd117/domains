@@ -18,30 +18,37 @@
 </head>
 
 <body>
-<?php
+    
+    <?php
     require_once './blocks/header.php';
-?>
-<a id="anchor"></a>
-<?php
+    ?>
+    <a id="anchor"></a>
+    <?php
     require_once './blocks/topmenu.php';
     ?>
-    
-    <div class="bg">
-
-        <div class="main">
-            <?php
-            include './blocks/leftsidebar.php';
-            ?>
-            <div class="content">
-
-                <h1><?= $article->title ?></h1>
-                <p><?= $article->text ?></p>
 
 
-            </div>
+
+    <div class="main">
+        <?php
+        include './blocks/leftsidebar.php';
+        ?>
+        <div class="content">
+
+            <h1><?= $article->title ?></h1>
+            <p><?= $article->text ?></p>
+
 
         </div>
+
     </div>
+    <div class="back">
+        <div class="paralax paralax-l1"></div>
+        <div class="paralax paralax-l2"></div>
+        <div class="paralax paralax-l3"></div>
+
+    </div>
+    <script src="./js/back.js"></script>
     <?php
     require_once './blocks/footer.php';
     ?>
