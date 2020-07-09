@@ -7,32 +7,32 @@
             <div class="lbtn-circle">
                 <div class="lbtn-button-icon lbtn-rotate-450">></div>
             </div>
-            <div class="lbtn-button-text lbtext">Продукция</div>
+            <div class="lbtn-button-text lbtext">Products</div>
 
         </button>
-        <a href="./prodlist.php?category=rif&title=Катализаторы риформинга#anchor">
-            <div class="lbtn-sub-button"><button>Катализаторы риформинга</button></div>
+        <a href="./prodlist.php?category=rif&title=Reforming Catalysts#anchor">
+            <div class="lbtn-sub-button"><button>Reforming Catalysts</button></div>
         </a>
-        <a href="./prodlist.php?category=izom&title=Катализаторы изомеризации#anchor">
-            <div class="lbtn-sub-button"><button>Катализаторы изомеризации</button></div>
+        <a href="./prodlist.php?category=izom&title=Isomerization Catalysts#anchor">
+            <div class="lbtn-sub-button"><button>Isomerization Catalysts</button></div>
         </a>
-        <a href="./prodlist.php?category=go&title=Катализаторы гидроочистки#anchor">
-            <div class="lbtn-sub-button"><button>Катализаторы гидроочистки</button></div>
+        <a href="./prodlist.php?category=go&title=Hydrotreating Catalysts#anchor">
+            <div class="lbtn-sub-button"><button>Hydrotreating Catalysts</button></div>
         </a>
-        <a href="./prodlist.php?category=gig&title=Катализаторы гидрирования и гидрокрекинга#anchor">
-            <div class="lbtn-sub-button"><button>Катализаторы гидрирования и гидрокрекинга</button></div>
+        <a href="./prodlist.php?category=gig&title=Hydrogenation Catalysts and Hydrocracking Catalysts#anchor">
+            <div class="lbtn-sub-button"><button>Hydrogenation Catalysts and Hydrocracking Catalysts</button></div>
         </a>
-        <a href="./prodlist.php?category=klaus&title=Катализаторы процесса Клауса#anchor">
-            <div class="lbtn-sub-button"><button>Катализаторы процесса Клауса</button></div>
+        <a href="./prodlist.php?category=klaus&title=Claus Catalysts#anchor">
+            <div class="lbtn-sub-button"><button>Claus Catalysts</button></div>
         </a>
-        <a href="./prodlist.php?category=eco&title=Экологические катализаторы#anchor">
-            <div class="lbtn-sub-button"><button>Экологические катализаторы</button></div>
+        <a href="./prodlist.php?category=eco&title=Environmental Catalysts#anchor">
+            <div class="lbtn-sub-button"><button>Environmental Catalysts</button></div>
         </a>
-        <a href="./prodlist.php?category=nos&title=Носители для катализаторов#anchor">
-            <div class="lbtn-sub-button"><button>Носители для катализаторов</button></div>
+        <a href="./prodlist.php?category=nos&title=Catalyst Supports#anchor">
+            <div class="lbtn-sub-button"><button>Catalyst Supports</button></div>
         </a>
-        <a href="./prodlist.php?category=adsorb&title=Адсорбенты и осушители#anchor">
-            <div class="lbtn-sub-button"><button>Адсорбенты и осушители</button></div>
+        <a href="./prodlist.php?category=adsorb&title=Adsorbents and Dryers#anchor">
+            <div class="lbtn-sub-button"><button>Adsorbents and Dryers</button></div>
         </a>
         
     </div>
@@ -43,7 +43,7 @@
             <div class="lbtn-circle">
                 <div class="lbtn-button-icon lbtn-rotate-450">></div>
             </div>
-            <div class="lbtn-button-text2 lbtext">Технический сервис</div>
+            <div class="lbtn-button-text2 lbtext">Technical &nbsp; &nbsp; &nbsp; Services</div>
 
         </button>
         <?php
@@ -87,7 +87,7 @@
             <div class="lbtn-circle">
                 <div class="lbtn-button-icon lbtn-rotate-450">></div>
             </div>
-            <div class="lbtn-button-text2 lbtext">Аналитическая база</div>
+            <div class="lbtn-button-text2 lbtext">Analytical &nbsp; &nbsp; &nbsp; capacity</div>
 
         </button>
         <?php

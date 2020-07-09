@@ -1,6 +1,6 @@
 <div class="topbar-container" style="z-index: 4">
     <div class="topbar" style="z-index: 4">
-        <a href="./index.php"><button class="tbtn" style="z-index: 4">Главная</button></a>
+        <a href="./index.php"><button class="tbtn" style="z-index: 4">Home</button></a>
         <?php
         $sql = 'SELECT * FROM `articles` WHERE `location` = ?';
         $location = 'topmenu';

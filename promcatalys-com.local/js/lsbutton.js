@@ -24,7 +24,7 @@ window.addEventListener('DOMContentLoaded',
         }
 
         function openBar(i) {
-            console.log(lsbutton[i].style.maxHeight);
+            //console.log(lsbutton[i].style.maxHeight);
             if (lsbutton[i].style.maxHeight == '2.6em') {
                 lsbutton[i].style.maxHeight = '30em';
                 rotate[i].style.transform = 'rotate(450deg)';

@@ -121,7 +121,7 @@ body {
     font-family: "Roboto";
     color: white;
     padding-left: 2em;
-    padding-top: 4em;
+    padding-top: 6em;
 }
 
 .header-text .zao {
@@ -476,13 +476,13 @@ h1 {
     }
     .header-text {
         padding-left: 1em;
-        padding-top: 4em;
+        padding-top: 5em;
     }
     .header-text .zao {
-        font-size: .7em;
+        font-size: .9em;
     }
     .header-text .pk {
-        font-size: 1.5em;
+        font-size: 1.7em;
     }
 }
 
@@ -505,13 +505,13 @@ h1 {
     }
     .header-text {
         padding-left: 1em;
-        padding-top: 2em;
+        padding-top: 2.5em;
     }
     .header-text .zao {
-        font-size: .4em;
+        font-size: .6em;
     }
     .header-text .pk {
-        font-size: 1em;
+        font-size: 1.2em;
     }
     .main {
         flex-wrap: wrap;
