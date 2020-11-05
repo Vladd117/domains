@@ -4,7 +4,7 @@
                 <img class="logo-img" src="./img/logo.png" alt="">
             </div>
             <div class="header-text">
-                <p class="zao">ЗАКРЫТОЕ АКЦИОНЕРНОЕ ОБЩЕСТВО</p>
+                <p class="zao">АКЦИОНЕРНОЕ ОБЩЕСТВО</p>
                 <P class="pk">ПРОМЫШЛЕННЫЕ<br>КАТАЛИЗАТОРЫ </P>
             </div>
         </div>
