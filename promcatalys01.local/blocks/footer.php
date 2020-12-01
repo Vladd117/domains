@@ -12,7 +12,7 @@
         </div>
     </div>
     <div class="footer-cont" >
-        <p>© promcatalys.ru 2007-2020 все права защищены<br> АО «Промкатализ»<br> г. Рязань, Район Южный Промузел, 17, стр. 17<br> +7 (4912) 46-64-20</p>
+        <p>© <a href="mailto:info@promcatalys.ru" style="text-decoration: none; color: white;">promcatalys.ru</a> 2007-2020 все права защищены<br> АО «Промкатализ»<br> г. Рязань, Район Южный Промузел, 17, стр. 17<br> <a href="tel:+74912466420" style="text-decoration: none; color: white;">+7 (4912) 46-64-20</a></p>
     </div>
     <div class="autograph">
         Сайт изготовлен <a href="https://vk.com/suhanovv">Владиславом Сухановым </a>

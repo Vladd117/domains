@@ -26,7 +26,7 @@
 
     <div class="footer-cont">
 
-        <p>© promcatalys.com 2007-2020 all rights reserved<br>CJSC PROMCATALYS<br>Ryazan, Yuzhny Promuzel, 17<br>+7 (4912) 46-64-20</p>
+        <p>© <a href="mailto:info@promcatalys.ru" style="text-decoration: none; color: white;">promcatalys.com</a> 2007-2020 all rights reserved<br>JSC PROMCATALYS<br>Ryazan, Yuzhny Promuzel, 17<br><a href="tel:+74912466420" style="text-decoration: none; color: white;">+7 (4912) 46-64-20</a></p>
 
     </div>
 

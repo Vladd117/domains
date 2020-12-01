@@ -11,5 +11,6 @@
             echo "<a href='./articles.php?id=$row->id&location=topmenu#anchor'><button class='tbtn'>$row->name</button></a>";
         }
         ?>
+        <a href='http://promcatalys.com'><button class='tbtn'>  <img class="lng-pic" src="./img/en.png" alt="English versoin">&nbsp;&nbsp;English</button></a>
     </div>
 </div>

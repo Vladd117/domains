@@ -10,7 +10,7 @@
 
             <div class="header-text">
 
-                <p class="zao">Closed Joint-Stock Company</p>
+                <p class="zao">Joint-Stock Company</p>
 
                 <P class="pk">PROMCATALYS</P>
 
@@ -20,7 +20,7 @@
 
         <div class="header-cont">
 
-            <span class="header-cont-span" style="text-decoration: none;">info@promcatalys.ru &nbsp;&nbsp;&nbsp;&nbsp;</span> <span class="header-cont-span" style="text-decoration: none; color: white">Tel: +7 (4912) 46-64-20</span>
+            <a href="mailto:info@promcatalys.ru" class="header-cont-span" style="text-decoration: none; color: white;">info@promcatalys.ru &nbsp;&nbsp;&nbsp;&nbsp;</a> <a href="tel:+74912466420" class="header-cont-span" style="text-decoration: none; color: white">Tel: +7 (4912) 46-64-20</a>
 
         </div>
 

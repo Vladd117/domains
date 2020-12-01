@@ -87,7 +87,7 @@
             <div class="lbtn-circle">
                 <div class="lbtn-button-icon lbtn-rotate-450">></div>
             </div>
-            <div class="lbtn-button-text2 lbtext">Analytical &nbsp; &nbsp; &nbsp; capacity</div>
+            <div class="lbtn-button-text2 lbtext">Analytical &nbsp; &nbsp; &nbsp; Capacity</div>
 
         </button>
         <?php
